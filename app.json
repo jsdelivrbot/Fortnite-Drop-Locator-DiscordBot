@@ -1,0 +1,8 @@
+{
+  "name": "Fornite Drop Locator DiscordBot",
+  "description": "Discord bot for random drop locations and challenges.",
+  "repository": "https://github.com/heroku/node-js-getting-started",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "discord", "heroku"],
+  "image": "heroku/nodejs"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "bot-fortnite-discord",
+  "version": "0.0.0",
+  "description": "Description for brucefun",
+  "private": true,
+  "license": "UNLICENSED",
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "dotenv": "^5.0.1"
+  }
+}
