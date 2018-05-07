@@ -1,5 +1,5 @@
 # About
-I made a Discord chatbot for my friends one weekend and decided to strip all personal functions to create this skeleton-of-a-Discord-bot project. Feel free to contact me (or open an issue or pull request) if you have any questions or suggestions.
+A Discord bot for randomizing drop locations (named or grid) and custom challenges. Commands: #drop #grid #challenges. Borrowed some content from FortniteRoulette. "Forked" from my project-ziggurat repository: https://github.com/BitBruce/project-ziggurat
 
 # Installation
 
