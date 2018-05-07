@@ -65,23 +65,7 @@ discordClient.on('message', function(message) {
   }
 });
 
-// On message deleted - Example
-// discordClient.on('messageDelete', (message) => {
-//     blastDeletedMessage(message);
-// });
-
 /* Helper functions */
-
-var blastDeletedMessage = function(message) {
-  // var channel = discordClient.channels.find('id', ''); // insert id of channel, or programmatically find channels
-  var channel = message.channel;
-  console.log("Blasting deleted message to channel: {}", channel.id);
-
-  var name = message.member.nickname || message.author.username;
-  channel.send("Message deleted by " + name +"\n" + "Message: " + message.content)
-  .then(message => console.log(`Deleted message: ${message.content}`))
-  .catch(console.error);
-};
 
 var selectRandomLocation = function() {
   var rand = genRand(namedLocations.length);
@@ -99,7 +83,6 @@ var selectRandomChallenge = function() {
   var rand = genRand(defaultChallenges.length);
   var challenge = defaultChallenges[rand];
   return challenge.name + ": " + challenge.desc;
-  // return challenge;
 }
 
 /* Utility functions */
@@ -242,19 +225,6 @@ var defaultChallenges = [
         desc : 'Win without directly harming any other players.'
     },
 ];
-
-// var otherLocations = [
-//     { name: 'Broken Town' },
-//     { name: 'Motel' },
-//     { name: 'Soccer/Football Pitch' },
-//     { name: 'Crate Yard' },
-//     { name: 'Racetrack' },
-//     { name: 'Trailer Park' },
-//     { name: 'Prison' },
-//     { name: 'Factory by Retail Row' },
-//     { name: 'Factory by Flush Factory' },
-//     { name: 'Giant Chair' }
-// ];
 
 /* Main */
 var initialize = function() {
